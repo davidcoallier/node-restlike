@@ -16,30 +16,31 @@ If you are looking for something solid, look at journey and/or nodejitsu, they h
 synopsis
 --------
 
-var restlike = require('./lib/restlike');
+    var restlike = require('./lib/restlike');
 
-http.creatServer(function (request, response) {
-    var restlike = new restlike.Restlike(request, response);
+    http.creatServer(function (request, response) {
+        var restlike = new restlike.Restlike(request, response);
     
-    restlike.match('/my/road', {
-        // Handle the GET request
-        get: function() { 
-            return {"name": "fun"};
-        },
-        
-        // Handle the POST request
-        post: function() {
-            return ['posted'];
-        }
-    });
+        restlike.match('/my/road', {
+            // Handle the GET request
+            get: function() { 
+                return {"name": "fun"};
+            },
+            
+            // Handle the POST request
+            post: function() {
+                return ['posted'];
+            }
+        });
     
-    restlike.match('/your/road',{
-        // Handle the DELETE request.
-        delete: function() {
-            return [1,2,3,4,5];
-        }
-    });
-}).listen(8080);
+        restlike.match('/your/road',{
+            // Handle the DELETE request.
+            delete: function() {
+                return [1,2,3,4,5];
+            }
+        });
+    }).listen(8080);
+
 
 license
 -------
