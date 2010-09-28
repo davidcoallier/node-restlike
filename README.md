@@ -1,4 +1,4 @@
-#node.js RESTlike
+node.js RESTlike
 ==================
 
 > Very very experimental node.js REST-ish-like server.
