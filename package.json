@@ -1,0 +1,22 @@
+{
+	"name": "node-restlike",
+	"author": "David Coallier",
+	"email": "david.coallier@gmail.com",
+	"dependencies": [],
+	"contributors": [],
+	"keywords": [
+            "rest",
+            "database",
+            "web",
+            "json",
+	],	
+	"mappings":{},
+	"overlay": {},
+	"githubName": "node-restlike",
+	"engines": {"node":">=0.1.94"},
+	"type": "zip",
+	"version": "0.1",
+	"location": "http://github.com/davidcoallier/node-restlike",
+	"license":"BSD"
+}
+
