@@ -18,13 +18,13 @@ synopsis
 
     var restlike = require('./lib/restlike');
 
-    http.creatServer(function (request, response) {
+    http.createServer(function (request, response) {
         var restlike = new restlike.Restlike(request, response);
     
-        restlike.match('/my/road', {
+        restlike.match('/my/:name', {
             // Handle the GET request
-            get: function() { 
-                return {"name": "fun"};
+            get: function(data) { 
+                return {"name": data.name};
             },
             
             // Handle the POST request

@@ -4,9 +4,9 @@ var restlike = require('./lib/restlike');
 
 http.createServer(function (request, response) {
     var rest = new restlike.Restlike(request, response);
-    rest.match('/time/to/go', {
-        get: function() {
-            return [1,2,3];
+    rest.match('/who/:are/you/:really', {
+        get: function(data) {
+            return data;
         }
     });
 
